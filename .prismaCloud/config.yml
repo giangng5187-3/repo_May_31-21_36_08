@@ -1,0 +1,25 @@
+# This is the configuration file for Iac Scan API.
+  
+# Specify the template types.The valid values are TF, CFT, K8S
+template_type: TF
+
+# terraform version valid values are 0.11 or 0.12.
+# 0.12 is the default version. For 0.11, user needs to specify.
+terraform_version: 0.12
+    
+# If terraform version has value as 0.12, then terraform_012_parameters is a mandatory parameter.
+# terraform_012_parameters is a array of root_module and variable_files(comma separated list).
+# Please specify blank string for respective parameters if not applicable.
+terraform_012_parameters:
+- root_module: scan/terraform12novariablemodule/
+- root_module: scan/terraform12module/
+  variable_files: 
+  - '/scan/terraform12module/elks.tf'
+- root_module: /scan/for-expressions/
+  variable_files: 
+  - ''
+
+# Labels are the tags for the repo    
+tags:
+- Org:Engineering
+- Team:Shift_Left
