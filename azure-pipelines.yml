@@ -9,7 +9,7 @@ trigger:
 steps:
 - task: Prisma Cloud IaC Scan@1
   inputs:
-    Path: 'https://api-sl.qa.prismacloud.io'
+    Path: $(System.DefaultWorkingDirectory)
     prismaCloudService: 'QA-IAC-GITHUB'
     High: '0'
     Medium: '0'
