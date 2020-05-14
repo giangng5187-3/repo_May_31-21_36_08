@@ -3,14 +3,11 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- master
-
 steps:
 - task: Prisma Cloud IaC Scan@1
   inputs:
-    Path: $(System.DefaultWorkingDirectory)
-    prismaCloudService: 'QA-IAC-GITHUB'
+    Path: '$(System.DefaultWorkingDirectory)'
+    prismaCloudService: 'QA-IAC-GITHUB2'
     High: '0'
     Medium: '0'
     Low: '0'
