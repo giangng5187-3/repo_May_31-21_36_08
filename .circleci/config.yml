@@ -9,9 +9,9 @@ workflows:
     jobs:
       - scan_iac:
           prisma_cloud_api_url: https://api-sl.qa.prismacloud.io
-          access_key: f3ebe8c0-a7c2-44c7-bb32-1bf5b0fc26d1
+          access_key: 97296e6d-3420-4edd-bc56-20612406e7e7
           secret_key: PC_SECRET_KEY
           failure_criteria_high_severity: 1
           failure_criteria_medium_severity: 2
           failure_criteria_low_severity: 3
-          failure_criteria_operator: and
+          failure_criteria_operator: or
