@@ -12,12 +12,12 @@ terraform_version: 0.12
 # Please specify blank string for respective parameters if not applicable.
 terraform_012_parameters:
 - root_module: scan/terraform12novariablemodule/
-- root_module: scan/terraform12module/
-  variable_files: 
-  - '/scan/terraform12module/elks.tf'
-- root_module: /scan/for-expressions/
-  variable_files: 
-  - ''
+#- root_module: scan/terraform12module/
+#  variable_files: 
+#  - '/scan/terraform12module/elks.tf'
+#- root_module: /scan/for-expressions/
+#  variable_files: 
+#  - ''
 
 # Labels are the tags for the repo    
 tags:
