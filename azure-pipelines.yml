@@ -3,7 +3,7 @@ steps:
 - task: Prisma Cloud IaC Scan@1
   inputs:
     Path: '.'
-    prismaCloudService: 'QA-MAY-18-2020'
+    prismaCloudService: 'API-SL-QA'
     High: '0'
     Medium: '0'
     Low: '0'
