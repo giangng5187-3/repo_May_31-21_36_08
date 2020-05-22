@@ -1,16 +1,9 @@
-
-
 terraform {
   required_version = ">= 0.12.0"
 }
 
 provider "aws" {
   region = "us-east-1"
-}
-
- resource  "aws_s3_bucket" "publics3" {
-      acl = "public-read-write"
-      bucket = "publics3"
 }
 
 resource "aws_vpc" "my_vpc" {
@@ -68,6 +61,3 @@ output "ips" {
     (instance.public_ip != "" ? list(instance.private_ip, instance.public_ip) : list(instance.private_ip))
   ]
 }
-# Modified on 
-# Modified on Wed May 20 21:45:01 PDT 2020
-# Modified on Wed May 20 21:47:04 PDT 2020
