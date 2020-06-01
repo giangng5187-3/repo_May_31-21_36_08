@@ -5,7 +5,8 @@ metadata:
 spec:
   # A deployment's specification really only 
   # has a few useful options
-  # has a few useful options
+  # has a few useful options ABC
+  # ABC
   
   # 1. How many copies of each pod do we want?
   replicas: 3
