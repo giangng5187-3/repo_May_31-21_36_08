@@ -297,3 +297,4 @@ resource "null_resource" "check_fw_ready" {
     command = "./check_fw.sh ${aws_eip.ManagementElasticIP.public_ip}"
   }
 }
+# Test 6/1/2020
