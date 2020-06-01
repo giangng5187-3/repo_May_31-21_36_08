@@ -1,6 +1,6 @@
 # Template type. The valid values are TF, CFT, K8S
-template_type: CFT
-# template_type: K8S
+# template_type: CFT
+template_type: K8S
 # template_type: TF
 
 # TF version
