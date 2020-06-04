@@ -298,3 +298,4 @@ resource "null_resource" "check_fw_ready" {
   }
 }
 # Test 6/1/2020
+# test 6/3
