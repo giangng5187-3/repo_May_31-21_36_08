@@ -1,6 +1,7 @@
 
 /*
-  Create the VPC
+  Create the VPC Test 603
+  Test 
 */
 resource "aws_vpc" "main" {
   cidr_block = "${var.VPCCIDR}"
